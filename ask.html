@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="Korean">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Wave - 문의</title>
+    <meta name="description" content="한국의 문화와 트렌드를 제공하는 웹사이트">
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant:wght@700&family=Gowun+Batang:wght@400;700&family=Josefin+Sans:ital,wght@1,700&family=Nanum+Myeongjo&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <header class="wrapper">
+        <nav>
+            <div class="language-nav">
+                <img class="global" src="language.png" alt="global">
+                <p>Language</p>
+                <ul class="language-list">
+                    <li class="lang" id="korean">한국어</li>
+                    <li class="lang">English</li>
+                    <li class="lang">日本語</li>
+                    <li class="lang">中國語</li>
+                    <li class="lang">Español</li>
+                    <li class="lang">Deutsch</li>
+                    <li class="lang">Français</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="title">
+            <a href="index.html">
+                <h1>Korean Wave</h1>
+                <p>한류; 韓流; Hallyu;</p>
+            </a>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="k-mediacontents.html">K-영화&드라마</a></li>
+                <li><a href="k-pop.html">K-팝</a></li>
+                <li><a href="k-sports.html">K-스포츠</a></li>
+                <li><a href="k-beauty.html">K-뷰티</a></li>
+                <li><a href="k-food.html">K-푸드</a></li>
+                <li id="visit-info"><a href="k-tour.html">내한 정보</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper"><h2 class="sub-title-ask">문의하기</h2></div>
+    <main class="ask-form wrapper">
+        <form>
+            <div>
+                <label for="ask-type">문의유형</label>
+                <select name="ask-type" id="ask-type">
+                    <option value="선택안함" selected></option>
+                    <option value="k-영화&드라마">k-영화&드라마</option>
+                    <option value="k-팝">k-팝</option>
+                    <option value="k-스포츠">k-스포츠</option>
+                    <option value="k-뷰티">k-뷰티</option>
+                    <option value="k-푸드">k-푸드</option>
+                    <option value="k-여행">k-여행</option>
+                    <option value="k-어학원">k-어학원</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+            <div>
+                <label for="title">제목</label>
+                <input type="text" id="title" name="ask-title" placeholder="제목을 입력하세요.">
+            </div>
+            <div>
+                <textarea placeholder="내용을 입력하세요."></textarea>
+            </div>
+            <div class="agree">
+                <input type="checkbox" name="agreement" value="yes" id="agreement">
+                <label for="agreement">문의 답변을 이메일로 수신하는 것에 동의합니다.</label>
+            </div>
+            <div class="e-mail">
+                <label for="e-mail">이메일주소:</label>
+                <input type="email" id="e-mail" placeholder="example@example.com">
+            </div>    
+            <div>
+                <input type="submit" value="문의하기">
+            </div>
+        </form>
+    </div>
+    </main>
+</body>
+<footer>
+    <div class="wrapper footer">
+        <div>
+            <p><small>&copy; 2022 KoreanWave</small></p>
+        </div>
+        <div class="inquiry">
+            <p class="help">도움이 필요하신가요?</p>
+            <a class="button-help" href="">문의하기</a>
+        </div>
+    </div>
+</footer>
+</html>
